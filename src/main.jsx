@@ -34,7 +34,7 @@ function ImageSlot({src, title, className='', onClick}) {
   return <button className={`image-slot ${className} ${failed?'is-placeholder':''}`} onClick={onClick} aria-label={`View ${title}`}>
     {!failed && <img src={src} alt={title} loading="lazy" onError={()=>setFailed(true)} />}
     {failed && <div className="placeholder-art"><span className="placeholder-ring ring-one"/><span className="placeholder-ring ring-two"/><span className="placeholder-ring ring-three"/><span className="placeholder-caption">Add your photograph<br/><small>{src.split('/').pop()}</small></span></div>}
-    <span className="image-label"><small>{title}</small><span className="image-label"><small>{title}</small></span>
+    <span className="image-label"><small>{title}</small></span>
   </button>;
 }
 function App() {
