@@ -69,7 +69,7 @@ function App() {
           <p className="eyebrow"><span/> A living heritage of woodcraft</p>
           <h1>Where wood<br/><em>becomes art.</em></h1>
           <p className="hero-subtitle">Discover the beauty of handcrafted wooden sculpture by Ramesh Ghone.</p>
-          <button className="button button-gold" onClick={()=>scrollTo('museum')}>Explore the Museum <span>↘</span></button>
+         <button className="button button-gold" onClick={()=>scrollTo('museum')}>Explore the Museum</button>
         </div>
         <div className="hero-bottom"><span>CRAFTED WITH PATIENCE</span><span className="hero-scroll">SCROLL TO DISCOVER ↓</span></div>
       </section>
